@@ -11,6 +11,6 @@ export const createAISlice: StateCreator<AISlice, [], [], AISlice> = () => ({
     recipe: '',
     generateRecipe: async(prompt) => {
         
-        await AIServices.generateRecipe(prompt)
+       const data = await AIServices.generateRecipe(prompt)
     }
 })
